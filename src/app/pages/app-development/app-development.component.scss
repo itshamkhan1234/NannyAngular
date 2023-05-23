@@ -1,0 +1,886 @@
+.marketplace-bg {
+    background: url("./../../../assets/images/app/appnew/banner_bg_fill.webp") no-repeat,
+        url("./../../../assets/images/app/appnew/banner_bg_outline.webp") no-repeat;
+    background-position: 40% 28%, 10% 86%;
+    background-size: 5%, 10%;
+    padding-top: 30px;
+    overflow-x: hidden;
+    .bg-img {
+        width: 50%;
+        position: absolute;
+        top: -8%;
+        left: -24%;
+        z-index: -1;
+    }
+    .bg-img-fruits {
+        width: 50%;
+        position: absolute;
+        top: 2%;
+        right: -24%;
+        z-index: -1;
+    }
+}
+
+.app-development {
+    background: url("./../../../assets/images/app/appnew/background.webp") no-repeat;
+    background-position: 100% -20%;
+    background-size: 51%;
+}
+.marketplace-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    .items-list {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        background-color: #80808047;
+        padding: 4px 8px;
+        border-radius: 8px;
+    }
+}
+.slick-slide {
+    margin: 0px 0px 80px;
+}
+.side-image {
+    width: 100%;
+    max-height: 550px;
+    height: 100%;
+    object-fit: contain;
+}
+
+.slider-img {
+    width: 100%;
+    height: 100%;
+    // max-height: 400px;
+    object-fit: cover;
+}
+.client-profile {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    flex-shrink: 0;
+}
+.content-space {
+    margin-top: -110px;
+}
+.counter-text {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+// .brand-img {
+//     width: 140px;
+//     height: 42px;
+//     object-fit: contain;
+// }
+.technical-text {
+    font-size: 20px;
+}
+.marketplace-img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+.box-app {
+    background: #ffffff;
+    box-shadow: 0px 10px 26px #3635350f;
+    border: 2px solid #ded4b7 !important;
+    border-radius: 6px;
+    padding: 48px;
+}
+.img-apple {
+    background: transparent linear-gradient(121deg, #2c2c2c 0%, #000000 100%) 0% 0% no-repeat padding-box;
+    border-radius: 6px 6px 0px 0px;
+    width: 100%;
+    text-align: center;
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.green .img-apple {
+    background: transparent linear-gradient(121deg, #19cb43 0%, #10ac35 100%) 0% 0% no-repeat padding-box;
+}
+.blue .img-apple {
+    background: transparent linear-gradient(121deg, #1538bf 0%, #102b92 100%) 0% 0% no-repeat padding-box;
+}
+.dark-blue .img-apple {
+    background: transparent linear-gradient(121deg, #67b7f7 0%, #42a5f5 100%) 0% 0% no-repeat padding-box;
+}
+.service-include {
+    .shadow-box-2 {
+        background: #ffffff;
+        box-shadow: 0px 10px 26px #36353514;
+        padding: 14px 20px;
+    }
+}
+.boxx-five {
+    width: 100%;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 4px 10px #0c680c1a;
+    border-radius: 12px;
+    padding: 16px;
+    min-height: 160px;
+    height: 100%;
+}
+.app-slider .slider-card {
+    padding: 10px;
+    box-shadow: none;
+}
+.app-slide {
+    position: absolute;
+    bottom: -50px;
+    background: #fff;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 40px #00000029;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 0 20px 25px;
+}
+.slider-card.slider-space {
+    position: relative;
+    border-bottom: 0;
+}
+.app-slider .slick-slide {
+    padding: 0 0px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+.app-slider .slider-card:hover {
+    border-bottom: 0;
+}
+.app-slide button.btn:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 10px;
+    max-width: 85%;
+    bottom: -7px !important;
+    box-shadow: none !important;
+    filter: blur(0px);
+    top: inherit;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #ded4b7;
+    border-radius: 4px;
+    opacity: 0.6;
+    z-index: -1;
+}
+.one-process img {
+    width: 100%;
+}
+.one-process ul {
+    height: 100%;
+    max-height: 170px;
+    min-height: 170px;
+    position: relative;
+}
+.one-process ul:after {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: #ded4b7;
+    content: "";
+    left: 15px;
+    top: 10px;
+    z-index: -1;
+}
+.one-process {
+    z-index: 1;
+}
+.one-process.two {
+    position: relative;
+    left: -25px;
+    // margin-left: -36px;
+    z-index: 999;
+}
+.one-process.three {
+    position: relative;
+    left: -50px;
+    // margin-left: -36px;
+}
+.one-process.four {
+    position: relative;
+    left: -75px;
+    // margin-left: -32px;
+}
+.one-process.five {
+    position: relative;
+    left: -100px;
+    // margin-left: -36px;
+}
+.one-process.one {
+    z-index: 9999;
+}
+.one-process.three {
+    z-index: 989;
+}
+.one-process.four {
+    z-index: 99;
+}
+.one-process li:first-child {
+    padding-top: 0;
+}
+.one-process li {
+    letter-spacing: 0px;
+    color: #2b2b2b;
+    font-size: 14px;
+    padding-left: 12px;
+    font-weight: 500;
+    height: 55px;
+    margin-left: 40px;
+    position: relative;
+}
+.one-process ul.reverse:after {
+    top: -35px !important;
+    left: 14px;
+}
+ul.reverse {
+    padding-top: 15px;
+}
+ul.blank {
+    opacity: 0;
+}
+.one-process li:after {
+    position: absolute;
+    content: "";
+    background: #ded4b7;
+    width: 5px;
+    height: 5px;
+    left: -6px;
+    top: 7px;
+    border-radius: 50%;
+}
+.one-process li:before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 1px;
+    background: #ded4b7;
+    left: -25px;
+    top: 9px;
+}
+.markite-sites img {
+    width: 100%;
+    max-width: 25px;
+}
+.markite-sites h5.fw-600 {
+    padding-bottom: 10px;
+}
+h6.technical-text.mb-0 {
+    font-size: 16px;
+    color: #2b2b2b;
+}
+.portfoli-text {
+    padding: 0 60px;
+}
+.portfoli-text {
+    h2 {
+        letter-spacing: 0.24px;
+        color: #000000;
+        font-size: 30px;
+        font-weight: 600;
+        margin: 20px 0;
+    }
+    p {
+        font-weight: 400;
+        font-size: 18px;
+        //    line-height: 28px;
+    }
+}
+
+.markite-sitess .marketplace-slider .slick-prev:before {
+    content: "";
+    font-family: "Font Awesome 5 Pro";
+    color: #DED4B7;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.marketplace-slider .slick-next:before {
+    content: "";
+    font-family: "Font Awesome 5 Pro";
+    color: #DED4B7;
+    font-size: 26px;
+    font-weight: 500;
+}
+.portfoli-img img {
+    width: 100%;
+}
+
+.portfoli-img {
+    flex: 0 0 49%;
+}
+.achivments h2 {
+    font-size: 20px;
+    margin: 0 0 5px;
+}
+.achivments p {
+    font-weight: 600;
+    font-size: 14px;
+}
+.choose-us {
+    background: transparent linear-gradient(254deg, #938c78 0%, #ded4b7 100%);
+    p {
+        color: #fff;
+    }
+}
+.app-testimonial .shadow-box-2 {
+    padding: 15px 20px;
+}
+.talk-to-img img {
+    width: 100%;
+}
+.talk-to-img {
+    flex: 0 0 39%;
+}
+.talk-to-expert {
+    background: #ffffff;
+    box-shadow: 5px 10px 30px #0000000f;
+    border-radius: 20px;
+    padding: 68px 40px;
+    margin-left: -80px;
+}
+
+.talk-to-expert h4 {
+    color: #000000;
+    font-size: 30px;
+}
+// image sprite concept
+
+.app-develop_icons {
+    .cost-img,
+    .profitable-img,
+    .call-img,
+    .look-ahead-img,
+    .mentality-img,
+    .quality-img,
+    .satisfaction-img,
+    .cloud-expert-img,
+    .response-img,
+    .app-developer-img,
+    .technical-img,
+    .active-busniess-img,
+    .lifestyle-img,
+    .blockchain-img,
+    .laundry-img,
+    .enterprise-img,
+    .real-estate-img,
+    .network-img,
+    .dating-img,
+    .bank-img,
+    .education-img,
+    .transportation-img,
+    .healthcare-img,
+    .iot-img,
+    .sport-img,
+    .food-img,
+    .shopping-img,
+    .on-demand-img,
+    .source-code-img,
+    .color-palette-img,
+    .product-development-img,
+    .team-img,
+    .enterprises-solutions-img,
+    .transformation-img,
+    .cloud-img,
+    .api-img,
+    .check-img,
+    .custom-mobile-img,
+    .graphic-designer-img,
+    .client-img,
+    .cross_plateform-img,
+    .hybrid_native-img,
+    .android-img,
+    .ios-img {
+        background: url("./../../../assets/sprite/large_size_icons.webp") no-repeat;
+        background-size: 120px 5760px;
+        width: 120px;
+        height: 120px;
+        flex-shrink: 0;
+        display: inline-block;
+    }
+    .ios-img {
+        background-position: 0 0;
+    }
+    .android-img {
+        background-position: 0 -120px;
+    }
+    .hybrid_native-img {
+        background-position: 0 -238px;
+    }
+    .cross_plateform-img {
+        background-position: 0 -359px;
+    }
+    .client-img {
+        background-position: 0 -477px;
+    }
+    .graphic-designer-img {
+        background-position: 0 -599px;
+    }
+    .custom-mobile-img {
+        background-position: 0 -720px;
+    }
+    .check-img {
+        background-position: 0 -837px;
+    }
+    .api-img {
+        background-position: 0 -958px;
+    }
+    .cloud-img {
+        background-position: 0 -1079px;
+    }
+    .transformation-img {
+        background-position: 0 -1200px;
+    }
+    .enterprises-solutions-img {
+        background-position: 0 -1319px;
+    }
+    .team-img {
+        background-position: 0 -1440px;
+    }
+    .product-development-img {
+        background-position: 0 -1559px;
+    }
+    .color-palette-img {
+        background-position: 0 -1680px;
+    }
+    .source-code-img {
+        background-position: 0 -1799px;
+    }
+    .on-demand-img {
+        background-position: 0 -1920px;
+    }
+    .shopping-img {
+        background-position: 0 -2039px;
+    }
+    .food-img {
+        background-position: 0 -2159px;
+    }
+    .sport-img {
+        background-position: 0 -2280px;
+    }
+    .iot-img {
+        background-position: 0 -2401px;
+    }
+    .healthcare-img {
+        background-position: 0 -2520px;
+    }
+    .transportation-img {
+        background-position: 0 -2640px;
+    }
+    .education-img {
+        background-position: 0 -2760px;
+    }
+    .bank-img {
+        background-position: 0 -2879px;
+    }
+    .dating-img {
+        background-position: 0 -3000px;
+    }
+    .network-img {
+        background-position: 0 -3120px;
+    }
+    .real-estate-img {
+        background-position: 0 -3239px;
+    }
+    .enterprise-img {
+        background-position: 0 -3360px;
+    }
+    .laundry-img {
+        background-position: 0 -3479px;
+    }
+    .blockchain-img {
+        background-position: 0 -3599px;
+    }
+    .lifestyle-img {
+        background-position: 0 -3720px;
+    }
+    .active-busniess-img {
+        background-position: 0 -4338px;
+        height: 80px;
+    }
+    .technical-img {
+        background-position: 0 -4460px;
+        height: 80px;
+    }
+    .app-developer-img {
+        background-position: 0 -4579px;
+        height: 80px;
+    }
+    .response-img {
+        background-position: 0 -4699px;
+        height: 80px;
+    }
+    .cloud-expert-img {
+        background-position: 0 -4821px;
+        height: 80px;
+    }
+    .satisfaction-img {
+        background-position: 0 -4940px;
+        height: 80px;
+    }
+    .quality-img {
+        background-position: 0 -5061px;
+        height: 80px;
+    }
+    .mentality-img {
+        background-position: 0 -5180px;
+        height: 80px;
+    }
+    .look-ahead-img {
+        background-position: 0 -5299px;
+        height: 80px;
+    }
+    .call-img {
+        background-position: 0 -5419px;
+        height: 80px;
+    }
+    .profitable-img {
+        background-position: 0 -5541px;
+        height: 80px;
+    }
+    .cost-img {
+        background-position: 0 -5660px;
+        height: 80px;
+    }
+
+    .customer-img,
+    .expert-img,
+    .award-img,
+    .download-img,
+    .coding-img,
+    .innovation-img,
+    .unique-feature-img,
+    .clipboard-img,
+    .app-store-img,
+    .upwork-img,
+    .ai-img,
+    .google-maps-img,
+    .currency-img,
+    .voice-search-img,
+    .video-editing-img,
+    .editing-img,
+    .streaming-img,
+    .face-detection-img,
+    .motion-sensor-img,
+    .scanner-img,
+    .payment-img,
+    .offline-img,
+    .multi-currency-img,
+    .languages-img,
+    .tracking-img,
+    .emoji-img,
+    .siri-img,
+    .dark-mode-img,
+    .augmented-img,
+    .machine-learning-img {
+        background: url("./../../../assets/sprite/medium_size_icons.webp") no-repeat;
+        background-size: 78px 5772px;
+        width: 78px;
+        height: 78px;
+        flex-shrink: 0;
+        display: inline-block;
+    }
+    .machine-learning-img {
+        background-position: 0 -1405px;
+    }
+    .augmented-img {
+        background-position: 0 -1481px;
+    }
+    .dark-mode-img {
+        background-position: 0 -1561px;
+    }
+    .siri-img {
+        background-position: 0 -1637px;
+    }
+    .emoji-img {
+        background-position: 0 -1714px;
+    }
+    .tracking-img {
+        background-position: 0 -1795px;
+    }
+    .languages-img {
+        background-position: 0 -1871px;
+    }
+    .multi-currency-img {
+        background-position: 0 -2652px;
+    }
+    .offline-img {
+        background-position: 0 -2730px;
+    }
+    .payment-img {
+        background-position: 0 -2887px;
+    }
+    .scanner-img {
+        background-position: 0 -2807px;
+    }
+    .motion-sensor-img {
+        background-position: 0 -2262px;
+    }
+    .face-detection-img {
+        background-position: 0 -1950px;
+    }
+    .streaming-img {
+        background-position: 0 -2027px;
+    }
+    .editing-img {
+        background-position: 0 -2106px;
+    }
+    .video-editing-img {
+        background-position: 0 -2183px;
+    }
+    .voice-search-img {
+        background-position: 0 -2574px;
+    }
+    .currency-img {
+        background-position: 0 -2340px;
+    }
+    .google-maps-img {
+        background-position: 0 -2418px;
+    }
+    .ai-img {
+        background-position: 0 -2495px;
+    }
+    .upwork-img {
+        background-position: 0 -2964px;
+    }
+    .app-store-img {
+        background-position: 0 -3041px;
+    }
+    .clipboard-img {
+        background-position: 0 -3120px;
+    }
+    .unique-feature-img {
+        background-position: 0 -3197px;
+    }
+    .innovation-img {
+        background-position: 0 -3276px;
+    }
+    .coding-img {
+        background-position: 0 -3354px;
+    }
+    .download-img {
+        background-position: 0 -3431px;
+    }
+    .award-img {
+        background-position: 0 -3509px;
+    }
+    .expert-img {
+        background-position: 0 -3588px;
+    }
+    .customer-img {
+        background-position: 0 -3666px;
+    }
+}
+
+@media screen and (max-width: 1399px) {
+    .app-development {
+        background-position: 129% 90%;
+        background-size: 71%;
+    }
+    .markite-sitess .portfoli-text {
+        padding: 0 60px 0 40px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .marketplace-bg {
+        background: url("./../../../assets/banner_bg_fill.png") no-repeat,
+            url("./../../../assets/banner_bg_outline.png") no-repeat, none, none;
+        background-position: 17% 30%, 14% 4%, 85% 3%;
+        background-size: 10%;
+        padding-top: 30px;
+        overflow-x: hidden;
+        .bg-img {
+            width: 50%;
+            position: absolute;
+            top: -8%;
+            left: -24%;
+            z-index: -1;
+        }
+        .bg-img-fruits {
+            width: 50%;
+            position: absolute;
+            top: 2%;
+            right: -24%;
+            z-index: -1;
+        }
+    }
+    .slick-slide {
+        margin: 0px 0px 60px;
+        padding: 10px;
+    }
+    .content-space {
+        margin-top: 0;
+    }
+    .marketplace-img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    .app-development {
+        background: none !important;
+    }
+    .process-card {
+        .one-process {
+            width: 33%;
+            flex: 0 0 33%;
+        }
+        &.two,
+        .three,
+        .four,
+        .five {
+            left: 0;
+        }
+    }
+
+    h2.section-heading br {
+        display: none;
+    }
+    .section-heading {
+        font-size: 24px;
+    }
+    .talk-to-expert {
+        margin-left: 20px;
+    }
+    .feature-mobile h2.section-heading.mb-5 {
+        margin-bottom: 15px !important;
+    }
+    .hide-mob {
+        display: none;
+    }
+
+    .markite-sitess .portfoli-text {
+        padding: 0 20px 0 20px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .marketplace-tabs {
+        .nav-item {
+            width: 50%;
+        }
+        .nav-link {
+            font-size: 16px;
+            padding: 8px 30px;
+        }
+        .nav-link.active {
+            &::after {
+                content: none;
+            }
+        }
+        .mid-content {
+            font-weight: 600;
+            font-size: 10px;
+        }
+    }
+    .side-image {
+        max-height: 300px;
+    }
+    .slider-card {
+        padding: 16px;
+    }
+    .marketplace-list {
+        .items-list {
+            font-size: 10px;
+            margin-bottom: 4px;
+            padding: 4px 4px;
+        }
+    }
+    .counter-text {
+        font-size: 14px;
+        color: #ffffff;
+    }
+
+    .technical-text {
+        font-size: 14px;
+    }
+    // .brand-img {
+    //     width: 60px;
+    //     height: auto;
+    //     object-fit: contain;
+    // }
+    ul.blank {
+        display: none;
+    }
+    .one-process {
+        margin: 10px 0;
+    }
+    .one-process ul {
+        display: none;
+    }
+    .service-slider .col-md-3 {
+        flex: 0 0 49%;
+    }
+    .service-slider .row.row-col-3.mt-5.mb-5 {
+        margin: 10px 0 !important;
+    }
+    .app-testimonial .d-flex {
+        flex-direction: column;
+    }
+    .talk-to-expert {
+        margin-left: 0;
+        padding: 30px 20px;
+    }
+    .portfoli-img img {
+        border-radius: 16px;
+        margin-bottom: 30px;
+    }
+    .app-slide {
+        padding: 0 10px 20px;
+    }
+    .app-slider .d-flex {
+        flex-direction: column;
+        margin: 0 30px;
+    }
+    .markite-sitess .portfoli-text {
+        padding: 0 0 !important;
+    }
+    .app-slider .portfoli-text .d-flex {
+        margin: 0 !important;
+    }
+    .portfoli-text {
+        h2 {
+            font-size: 20px;
+            font-weight: 500;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .talk-to-expert h4 {
+        font-size: 18px;
+    }
+
+    .app-development .marketplace-bg {
+        padding-top: 0;
+    }
+    .achivments p {
+        font-size: 12px;
+    }
+    .boxx-five {
+        padding: 10px;
+    }
+    .service-include {
+        .shadow-box-2 {
+            padding: 10px;
+        }
+    }
+    .box-app {
+        padding: 10px;
+    }
+}

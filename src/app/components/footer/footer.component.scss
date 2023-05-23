@@ -1,0 +1,31 @@
+footer{
+    .heading{
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .footer-link{
+        font-size: 14px;
+        font-weight: 500;
+        color: #2A2A2A;
+        cursor: pointer;
+    }
+    .footer-item{
+        margin-bottom: 16px;
+    }
+    .base-footer{
+        background-color: #000000;
+        padding: 10px 0;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .logo{
+        max-width: 180px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    // footer{
+    //     padding-bottom: 42px;
+    // }
+}

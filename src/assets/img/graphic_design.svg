@@ -1,0 +1,15 @@
+<svg id="graphic_design" xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62">
+  <path id="Path_40790" data-name="Path 40790" d="M74.533,176A11.073,11.073,0,0,1,72,177.79V180h-.5a1.5,1.5,0,0,1,0,3,1.5,1.5,0,0,1,0,3h-9a1.5,1.5,0,0,1,0-3,1.5,1.5,0,0,1,0-3H62v-2.21A11.073,11.073,0,0,1,59.467,176H24v8.882l8.921,8.4L29,189.588V181H53v16H36.875l15.937,15H80a3,3,0,0,0,3-3V176Z" transform="translate(-21 -154)" fill="#ded4b7"/>
+  <g id="Group_36776" data-name="Group 36776">
+    <circle id="Ellipse_244" data-name="Ellipse 244" cx="1" cy="1" r="1" transform="translate(7 18)"/>
+    <circle id="Ellipse_245" data-name="Ellipse 245" cx="1" cy="1" r="1" transform="translate(11 18)"/>
+    <circle id="Ellipse_246" data-name="Ellipse 246" cx="1" cy="1" r="1" transform="translate(15 18)"/>
+    <path id="Path_40791" data-name="Path 40791" d="M18.4,226H33V208H7v7.274l-3.858-3.631a1.9,1.9,0,0,0-2.11-.57A1.892,1.892,0,0,0,0,213v28a3,3,0,0,0,3,3H33c1.309,0,1.761-.647,1.914-1.034a1.821,1.821,0,0,0-.685-2.065ZM9,210H31v14H16.272L9,217.156ZM3,242a1,1,0,0,1-1-1v-1H4v-2H2v-2H4v-2H2v-2H4v-2H2v-2H4v-2H2v-2H4v-2H2v-2H4v-2H2v-4.685L32.479,242Z" transform="translate(0 -182)"/>
+    <path id="Path_40792" data-name="Path 40792" d="M56,343.088V355.2H68.871Zm2,4.629,5.828,5.485H58Z" transform="translate(-49 -300.202)"/>
+    <path id="Path_40793" data-name="Path 40793" d="M83,6V0H77V2H57V0H51V6h6V4h3.381A11.994,11.994,0,0,0,55,14H27a3,3,0,0,0-3,3v7H60.427c.192.126.372.267.573.383v1.13A2.467,2.467,0,0,0,60.512,29,2.471,2.471,0,0,0,60,30.5,2.5,2.5,0,0,0,62.5,33h9A2.5,2.5,0,0,0,74,30.5a2.476,2.476,0,0,0-.512-1.5A2.467,2.467,0,0,0,73,25.512v-1.13c.2-.116.381-.257.573-.383H83V17a3,3,0,0,0-3-3H79A11.994,11.994,0,0,0,73.619,4H77V6h6ZM53,4V2h2V4ZM26,17a1,1,0,0,1,1-1H55.186a11.877,11.877,0,0,0,2.9,6H26Zm41-1a2,2,0,1,1,2-2A2,2,0,0,1,67,16Zm4.5,11a.5.5,0,0,1,0,1h-9a.5.5,0,0,1,0-1Zm0,4h-9a.5.5,0,0,1,0-1h9a.5.5,0,0,1,0,1ZM80,16a1,1,0,0,1,1,1v5H75.911a11.885,11.885,0,0,0,2.9-6Zm-3-2a9.959,9.959,0,0,1-5.456,8.9l-.544.28V25H68V17.858a4,4,0,1,0-2,0V25H63V23.178l-.544-.279A10,10,0,1,1,77,14ZM81,2V4H79V2Z" transform="translate(-21)"/>
+    <rect id="Rectangle_3638" data-name="Rectangle 3638" width="23" height="2" transform="translate(35 36)"/>
+    <rect id="Rectangle_3639" data-name="Rectangle 3639" width="23" height="2" transform="translate(35 40)"/>
+    <rect id="Rectangle_3640" data-name="Rectangle 3640" width="23" height="2" transform="translate(35 44)"/>
+    <rect id="Rectangle_3641" data-name="Rectangle 3641" width="23" height="2" transform="translate(35 48)"/>
+  </g>
+</svg>

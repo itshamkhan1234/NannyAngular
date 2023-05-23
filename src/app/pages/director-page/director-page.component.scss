@@ -1,0 +1,10 @@
+.director-card {
+    padding: 30px;
+    box-shadow: 0px 3px 6px #0000001a;
+    border-radius: 4px;
+}
+@media screen and (max-width: 767px) {
+    .director-card {
+        padding: 20px;
+    }
+}

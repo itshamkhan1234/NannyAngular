@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62">
+  <g id="brand_identity" transform="translate(-1 -1)">
+    <path id="Path_40771" data-name="Path 40771" d="M39.5,30.5,19,10H10v9L30.5,39.5Z" fill="#32cd32"/>
+    <path id="Path_40772" data-name="Path 40772" d="M37.5,46.5,44,53V40Z" fill="#32cd32"/>
+    <path id="Path_40773" data-name="Path 40773" d="M63,20a6.006,6.006,0,0,0-6-6h-.414L52,18.586l-1-1-6,6V14a5.008,5.008,0,0,0-4-4.9V1H6A5.006,5.006,0,0,0,1,6V58a5.006,5.006,0,0,0,5,5H45V40.414L56.414,29h.465a1.121,1.121,0,0,1,.793,1.914L47.293,41.293l1.414,1.414L59.086,32.328a3.117,3.117,0,0,0-.944-5.056L59.414,26l-1-1L63,20.414Zm-6.414,6L45,37.586,39.414,32,51,20.414ZM29,53.586,23.414,48,38,33.414,43.586,39Zm-6.419-3.591L27,54.419l-5.688,1.264ZM43,14V25.586l-8,8L12.414,11H40a3,3,0,0,1,3,3ZM6,3H39V9H6A3,3,0,0,1,6,3ZM3,58V9.974A4.948,4.948,0,0,0,6,11H9V61H6A3,3,0,0,1,3,58Zm40,3H11V12.414L33.586,35l-12.5,12.5-2.4,10.818,10.818-2.4L43,42.414ZM57,23.586,53.414,20,57.4,16.019A4.006,4.006,0,0,1,60.98,19.6Z"/>
+    <path id="Path_40774" data-name="Path 40774" d="M44.722,30.328h1.9v2h-1.9Z" transform="translate(-8.776 41.471) rotate(-45)"/>
+    <path id="Path_40775" data-name="Path 40775" d="M47.464,27.536h2v2h-2Z" transform="translate(-5.983 42.627) rotate(-45)"/>
+    <path id="Path_40776" data-name="Path 40776" d="M50.293,24.707h2v2h-2Z" transform="translate(-3.154 43.799) rotate(-45)"/>
+    <path id="Path_40777" data-name="Path 40777" d="M5,13H7v2H5Z"/>
+    <path id="Path_40778" data-name="Path 40778" d="M5,17H7v2H5Z"/>
+    <path id="Path_40779" data-name="Path 40779" d="M5,21H7v2H5Z"/>
+    <path id="Path_40780" data-name="Path 40780" d="M35,5h2V7H35Z"/>
+    <path id="Path_40781" data-name="Path 40781" d="M31,5h2V7H31Z"/>
+    <path id="Path_40782" data-name="Path 40782" d="M27,5h2V7H27Z"/>
+    <path id="Path_40783" data-name="Path 40783" d="M5,5H25V7H5Z"/>
+    <path id="Path_40784" data-name="Path 40784" d="M39,57h2v2H39Z"/>
+    <path id="Path_40785" data-name="Path 40785" d="M35,57h2v2H35Z"/>
+    <path id="Path_40786" data-name="Path 40786" d="M31,57h2v2H31Z"/>
+    <path id="Path_40787" data-name="Path 40787" d="M39,13h2v2H39Z"/>
+    <path id="Path_40788" data-name="Path 40788" d="M39,17h2v2H39Z"/>
+    <path id="Path_40789" data-name="Path 40789" d="M39,21h2v2H39Z"/>
+  </g>
+</svg>

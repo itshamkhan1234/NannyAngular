@@ -1,0 +1,354 @@
+.nft-bg {
+    background: url("./../../../assets/nft_assets/nftnew/banner.webp") no-repeat;
+    background-position: left center;
+    background-size: cover;
+    padding: 40px 0;
+    min-height: 940px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -90px;
+    .scroll-animation {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.scroller {
+    position: relative;
+    width: 30px;
+    height: 50px;
+    border: 3px solid #ffffff;
+    border-radius: 22px;
+    margin: 0 auto;
+    &::after {
+        background-color: #ffffff !important;
+    }
+}
+.banner-img {
+    width: 100%;
+    object-fit: contain;
+    margin-left: 21px;
+}
+.nft-img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+.map-size {
+    width: 100%;
+    height: 260px;
+}
+.bg-bussiness {
+    background-color: #00c6bd0f;
+    padding: 60px 0;
+}
+.nft-card {
+    height: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    &:hover {
+        box-shadow: 0px 3px 20px #0000001a;
+    }
+}
+.marketplace-img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.market-text {
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.portfolio-img {
+    max-width: 600px;
+}
+.shadow-box-2 {
+    padding: 30px 20px;
+    box-shadow: 0px 3px 10px #0000000f !important;
+    // width: 200px;
+    margin: 0;
+    border-radius: 12px;
+}
+.shadow-box-light {
+    background: #ffffff;
+    box-shadow: 0px 10px 26px #36353514;
+    border-radius: 12px;
+    width: 200px;
+    padding: 26px 20px;
+}
+.nft-standards-card,
+.storage-card,
+.frontend-card,
+.blockchin-card {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+.blockchin-card {
+    background-color: #ddedea;
+}
+.frontend-card {
+    background-color: #fce1e4;
+}
+.storage-card {
+    background-color: #fcf4dd;
+}
+.nft-standards-card {
+    background-color: #e8dff5;
+}
+.bg-techstack {
+    background: url("./../../../assets/nft_assets/tech_stack_bg.png") no-repeat center;
+    background-size: cover;
+    padding: 60px 0;
+}
+.bg-choose {
+    background: transparent linear-gradient(107deg, #1f1f1f 0%, #000000 100%) no-repeat;
+    min-height: 350px;
+    padding: 60px 0;
+}
+.bg-work {
+    color: #ffffff;
+    padding: 80px 30px;
+    display: flex;
+    align-items: center;
+}
+.bg-light {
+    padding: 60px 0;
+}
+.bg-buid {
+    background-color: #f8f9ff;
+    padding: 60px 0;
+}
+.nft-slider {
+    background: #ffffff;
+    box-shadow: 0px 10px 20px #0000000f;
+    border-radius: 30px;
+    // padding: 20px;
+    ::ng-deep .slick-dots {
+        bottom: -46px !important;
+        > li {
+            width: 30px !important;
+            height: 6px !important;
+            border-radius: 4px;
+            & button {
+                width: 30px !important;
+                height: 6px !important;
+            }
+            & :before {
+                content: "" !important;
+                background-color: #F7F7F7;
+                opacity: 1 !important;
+                width: 30px !important;
+                height: 6px !important;
+                border-radius: 6px;
+                transition: 0.4s ease-in-out;
+            }
+            &.slick-active button:before {
+                background-color: #ded4b7 !important;
+            }
+        }
+    }
+}
+.w-lg-75 {
+    width: 75%;
+}
+
+
+.sprite-img{
+    background: url("./../../../assets/sprite/icons.webp") no-repeat;
+        background-size: 88px 2730px;
+        width: 90px;
+        height: 79px;
+        flex-shrink: 0;
+        display: inline-block;
+}
+
+.sprite-img.sprite-img2 {
+    background-position: 0px -80px;
+}
+.sprite-img.sprite-img3 {
+    background-position: 0px -175px;
+}
+.sprite-img.sprite-img4 {
+    background-position: 0px -257px;
+}
+.sprite-img.sprite-img5 {
+    background-position: 0px -343px;
+}
+.sprite-img.sprite-img6 {
+    background-position: 0px -433px;
+}
+.sprite-img.sprite-img7 {
+    background-position: 0px -513px;
+}
+.sprite-img.sprite-img8 {
+    background-position: 0px -593px;
+}
+.sprite-img.sprite-img9 {
+    background-position: 0px -683px;
+}
+.sprite-img.sprite-img10 {
+    background-position: 0px -767px;
+}
+.sprite-img.sprite-img11 {
+    background-position: 0px -853px;
+}
+.sprite-img.sprite-img12 {
+    background-position: 0px -937px;
+}
+.sprite-img.sprite-img13 {
+    background-position: 0px -1024px;
+}
+.sprite-img.sprite-img14 {
+    background-position: 0px -1108px;
+}
+.sprite-img.sprite-img15 {
+    background-position: 0px -1198px;
+}
+.sprite-img.sprite-img16 {
+    background-position: 0px -1274px;
+}
+.sprite-img.sprite-img17 {
+    background-position: 0px -1361px;
+}
+.sprite-img.sprite-img18 {
+    background-position: 0px -1449px;
+}
+.sprite-img.sprite-img19 {
+    background-position: 0px -1539px;
+}
+.sprite-img.sprite-img20 {
+    background-position: 0px -1621px;
+}
+.sprite-img.sprite-img21 {
+    background-position: 0px -1960px;
+}
+span.sprite-img.sprite-img22 {
+    background-position: 0px -2044px;
+}
+span.sprite-img.sprite-img23 {
+    background-position: 0px -2130px;
+}
+
+span.sprite-img.sprite-img24 {
+    background-position: 0px -1708px;
+}
+span.sprite-img.sprite-img25 {
+    background-position: 0px -1789px;
+}
+span.sprite-img.sprite-img26 {
+    background-position: 0px -2305px;
+}
+span.sprite-img.sprite-img27 {
+    background-position: 0px -2391px;
+}
+span.sprite-img.sprite-img28 {
+    background-position: 0px -2473px;
+}
+span.sprite-img.sprite-img29 {
+    background-position: 0px -2560px;
+}
+
+.sprite-img-medium{
+    background: url("./../../../assets/sprite/benefits.webp") no-repeat;
+    background-size: 68px 370px;
+    width: 80px;
+    height: 70px;
+    flex-shrink: 0;
+    display: inline-block;
+    background-position: 3px -58px;
+}
+.sprite-img-medium.sprite-med1 {
+    background-position: 3px -118px;
+}
+span.sprite-img-medium.sprite-med2 {
+    background-position: 3px -181px;
+}
+span.sprite-img-medium.sprite-med3 {
+    background-position: 3px -246px;
+}
+span.sprite-img-medium.sprite-med4 {
+    background-position: 3px -306px;
+}
+
+.sprite-img-succes{
+    background: url("./../../../assets/sprite/successful_marketplace.webp") no-repeat;
+    background-size: 118px 820px;
+    width: 150px;
+    height: 94px;
+    flex-shrink: 0;
+    display: inline-block;
+    background-position: 23px 2px;
+}
+
+span.sprite-img-succes.sprite-succes2 {
+    background-position: 23px -106px;
+}
+
+span.sprite-img-succes.sprite-succes3 {
+    background-position: 23px -210px;
+}
+span.sprite-img-succes.sprite-succes4 {
+    background-position: 23px -307px;
+}
+span.sprite-img-succes.sprite-succes5 {
+    background-position: 23px -408px;
+}
+span.sprite-img-succes.sprite-succes6 {
+    background-position: 23px -518px;
+}
+span.sprite-img-succes.sprite-succes7 {
+    background-position: 23px -614px;
+}
+span.sprite-img-succes.sprite-succes8 {
+    background-position: 23px -715px;
+}
+
+@media screen and (max-width: 991px) {
+    .shadow-box-2 {
+        width: 100%;
+    }
+    .bg-choose {
+        background-position: center right;
+    }
+    .shadow-box-light {
+        width: 100%;
+    }
+    .w-lg-75 {
+        width: auto;
+    }
+    .nft-bg {
+        background-position: left center;
+        padding: 30px 0;
+        min-height: 800px;
+        .scroll-animation {
+            bottom: 20px;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .market-text {
+        font-size: 14px;
+    }
+    .bg-work {
+        padding: 30px 20px;
+    }
+    .bg-buid,
+    .bg-choose,
+    .bg-techstack,
+    .bg-light {
+        padding: 30px 0;
+    }
+    .shadow-box-2 {
+        padding: 16px 10px;
+    }
+}

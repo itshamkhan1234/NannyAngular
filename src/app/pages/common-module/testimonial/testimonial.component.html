@@ -1,0 +1,100 @@
+<section class="section-spacing service-slider">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <h2 class="section-heading mb-4">Listen to our Clients</h2>
+            </div>
+        </div>
+        <div class="marketplace-slider">
+            <ngx-slick-carousel class="carousel py-3" #slickModal="slick-carousel" [config]="slideConfig2">
+                <div ngxSlickItem class="slide mx-0 my-3">
+                    <div class="shadow-box-2 border-0">
+                        <div class="d-flex align-items-center">
+                            <img class="client-profile me-3" src="./../../../assets/marketplace/3.jpg" alt="....">
+                            <div>
+                                <h6 class="fw-600 text-dark">C. Stephan Brown</h6>
+                                <b class="paragraph text-light">CEO csbtechemporium bahamas</b>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <h5 class="fw-600">I highly recommend the Attalla Digital team!</h5>
+                            <div class="my-3">
+                                <rating [(ngModel)]="rate" [max]="max" [readonly]="isReadonly" class="star-rating">
+                                </rating>
+                            </div>
+                            <p class="paragraph-first text-light mb-0">
+                                It has been a pleasure working with Attalla Digital especially Omji Pandey,
+                                Harman Preet and Janardhan Singla. Their team is very receptive to our ideas and
+                                extremely knowledgeable about the current trends.
+                                After our first pleasant experience, we valued each suggestion from Attalla Digital whether it was regarding upgrading software or adding functionality in our
+                                website. Their decisions have really helped in making our customer experience better
+                                which directly impacts our bottom line.
+                                We were looking for an agency that had expertise in creating mobile & web solutions
+                                and at the same time would help us in marketing our services and in Attalla Digital, we have found what we were looking for.
+                                I highly recommend the Attalla Digital team
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div ngxSlickItem class="slide mx-0 my-3">
+                    <div class="shadow-box-2 border-0">
+                        <div class="d-flex align-items-center">
+                            <img class="client-profile me-3" src="./../../../assets/marketplace/4.jpg" alt="....">
+                            <div>
+                                <h6 class="fw-600 text-dark">Andrew Cohen</h6>
+                                <b class="paragraph text-light">Co-founder and Ceo of Prep app</b>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <h5 class="fw-600">Attalla Digital team did an amazing job!</h5>
+                            <div class="my-3">
+                                <rating [(ngModel)]="rate" [max]="max" [readonly]="isReadonly" class="star-rating">
+                                </rating>
+                            </div>
+                            <p class="paragraph-first text-light mb-0">
+                                Attalla Digital team did an amazing job while working to create our website
+                                from scratch. Their team was timely in completing the task at the same time, they
+                                were really patient listening to my feedback during the development stage. As a
+                                customer, I was able to communicate with all the employees in the process
+                                responsible for working on my website.
+                                Eventually, they delivered a website that we are in love with, absolutely
+                                cost-effective, efficient and that has the features that we could not believe would
+                                come in our budget. They were very supportive and professional throughout the
+                                complete development. I highly recommend Attalla Digital for all your web based
+                                requirements.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div ngxSlickItem class="slide mx-0 my-3">
+                    <div class="shadow-box-2 border-0">
+                        <div class="d-flex align-items-center">
+                            <img class="client-profile me-3" src="./../../../assets/marketplace/5.png" alt="....">
+                            <div>
+                                <h6 class="fw-600 text-dark ">Reginald Morgan</h6>
+                                <b class="paragraph text-light">Founder of Viral and Whizzride apps</b>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <h5 class="fw-600">It was a great experience!</h5>
+                            <div class="my-3">
+                                <rating [(ngModel)]="rate" [max]="max" [readonly]="isReadonly" class="star-rating">
+                                </rating>
+                            </div>
+                            <p class="paragraph-first text-light mb-0">
+                                It has been a very pleasant experience to work with the team of Attalla Digital. They are proactive in their approach and they helped me in taking the
+                                right decisions quickly. Whenever I felt confused over an idea, they explained and
+                                convinced me with logic helping the process to execution far beyond than I could
+                                imagine.
+                                The team knows how to communicate professionally with a client. They do not only
+                                look to finish execution but think from both the perspectives, from clients as well
+                                as from the end user. From sketching a plan to the delivery of the project, you can
+                                expect an excellent experience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </ngx-slick-carousel>
+        </div>
+    </div>
+</section>

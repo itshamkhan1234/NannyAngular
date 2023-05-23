@@ -1,0 +1,48 @@
+// tabs
+.nav-link.active {
+    background-color: #ded4b7 !important;
+    color: #000000;
+}
+::ng-deep .portfolio-slider {
+    .slick-prev,
+    .slick-next {
+        height: auto;
+        width: auto;
+        z-index: 999;
+        color: #fff;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border: 2px solid #ffffff;
+        border-radius: 50%;
+        padding: 4px 10px;
+        width: 36px;
+        height: 36px;
+    }
+    .slick-prev {
+        left: 20px;
+    }
+    .slick-next {
+        right: 20px;
+    }
+    .slick-next::before,
+    .slick-prev:before {
+        font-family: "Font Awesome 5 Pro";
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .slick-prev:before {
+        content: "\f053";
+    }
+    .slick-next::before {
+        content: "\f054";
+    }
+    .slick-track {
+        display: flex !important;
+        .slick-slide {
+            height: auto !important;
+        }
+    }
+}

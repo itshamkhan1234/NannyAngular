@@ -1,0 +1,5 @@
+<svg id="location" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <path id="Path_39751" data-name="Path 39751" d="M0,0H30V30H0Z" fill="none"/>
+  <path id="Path_39752" data-name="Path 39752" d="M13.755,2A8.747,8.747,0,0,0,5,10.751C5,17.315,13.755,27,13.755,27s8.755-9.689,8.755-16.253A8.747,8.747,0,0,0,13.755,2ZM7.5,10.751a6.254,6.254,0,0,1,12.507,0c0,3.6-3.6,8.989-6.254,12.352C11.154,19.765,7.5,14.315,7.5,10.751Z" transform="translate(1.245 0.498)" fill="#e50000"/>
+  <circle id="Ellipse_114" data-name="Ellipse 114" cx="3.122" cy="3.122" r="3.122" transform="translate(11.878 8.127)" fill="#e50000"/>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="228" height="228" viewBox="0 0 228 228">
+  <g id="banner_bg_outline" fill="none" stroke="#32cd32" stroke-width="40" opacity="0.1">
+    <path d="M114,0h0A114,114,0,0,1,228,114v0A114,114,0,0,1,114,228H0a0,0,0,0,1,0,0V114A114,114,0,0,1,114,0Z" stroke="none"/>
+    <path d="M114,20h0a94,94,0,0,1,94,94v0a94,94,0,0,1-94,94H26.714A6.714,6.714,0,0,1,20,201.286V114a94,94,0,0,1,94-94Z" fill="none"/>
+  </g>
+</svg>

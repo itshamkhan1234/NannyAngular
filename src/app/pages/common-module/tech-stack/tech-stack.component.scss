@@ -1,0 +1,129 @@
+.technical-text {
+    font-size: 20px;
+}
+.tech-stack {
+    .hotjar-img,
+    .mollie-img,
+    .paypal-img,
+    .google_analytics-img,
+    .stripe-img,
+    .heroku-img,
+    .digitalocean-img,
+    .aws-img,
+    .firebase-img,
+    .elasticsearch-img,
+    .redis-img,
+    .mangodb-img,
+    .mysql-img,
+    .postgresql-img,
+    .gitlab-img,
+    .docker-img,
+    .ansible-img,
+    .chef-img,
+    .strapi-img,
+    .ruby_rails-img,
+    .ruby-img,
+    .gatsby-img,
+    .css-img,
+    .html-img,
+    .vue-img,
+    .redux-img,
+    .react-img,
+    .js-img {
+        background: url("./../../../../assets/sprite/tech_stack_icons_small_size.webp") no-repeat;
+        background-size: 40px 1120px;
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+    }
+    .js-img {
+        background-position: 0 0;
+    }
+    .react-img {
+        background-position: 0 -39px;
+    }
+    .redux-img {
+        background-position: 0 -80px;
+    }
+    .vue-img {
+        background-position: 0 -118px;
+    }
+    .html-img {
+        background-position: 0 -158px;
+    }
+    .css-img {
+        background-position: 0 -199px;
+    }
+    .gatsby-img {
+        background-position: 0 -239px;
+    }
+
+    .ruby-img {
+        background-position: 0 -279px;
+    }
+    .ruby_rails-img {
+        background-position: 0 -320px;
+    }
+    .strapi-img {
+        background-position: 0 -358px;
+    }
+    .chef-img {
+        background-position: 0 -398px;
+    }
+    .ansible-img {
+        background-position: 0 -439px;
+    }
+    .docker-img {
+        background-position: 0 -480px;
+    }
+    .gitlab-img {
+        background-position: 0 -519px;
+    }
+    .postgresql-img {
+        background-position: 0 -558px;
+    }
+    .mysql-img {
+        background-position: 0 -599px;
+    }
+    .mangodb-img {
+        background-position: 0 -638px;
+    }
+    .redis-img {
+        background-position: 0 -679px;
+    }
+    .elasticsearch-img {
+        background-position: 0 -718px;
+    }
+    .firebase-img {
+        background-position: 0 -760px;
+    }
+    .aws-img {
+        background-position: 0 -798px;
+    }
+    .digitalocean-img {
+        background-position: 0 -839px;
+    }
+    .heroku-img {
+        background-position: 0 -880px;
+    }
+    .stripe-img {
+        background-position: 0 -920px;
+    }
+    .google_analytics-img {
+        background-position: 0 -959px;
+    }
+    .paypal-img {
+        background-position: 0 -999px;
+    }
+    .mollie-img {
+        background-position: 0 -1039px;
+    }
+    .hotjar-img {
+        background-position: 0 -1079px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .technical-text {
+        font-size: 14px;
+    }
+}

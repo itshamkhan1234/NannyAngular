@@ -1,0 +1,1144 @@
+<!-- heroCol section starts -->
+<section class="pb-0 shapes-bg animatedParent animateOnce" data-sequence='100'>
+    <div class="heroCol topSpace">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 order-md-2 mt-5 mt-md-0">
+                    <div class="banner-img">
+                        <img src="../../../assets/home/circle.webp" class="img_one animated growIn slower " data-id='1'>
+                        <img src="../../../assets/home/banner_image.webp"
+                            class="w-100 img_two phone-banner animated growIn slower " data-id='2'>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center text-md-start">
+                    <span class="text-primary greetxt">Top Rated Website & Mobile App Development Company</span>
+                    <h1 class="primary-heading  font-bold">
+                        <span class="d-block we-deliver">Are you looking for</span>
+                        <!-- <span class="txt-rotate" data-period="3000"
+                            data-rotate='[ "Website developers", "Mobile app developers", "UI Designs", "Marketplaces","Blockchain","Digital Marketing Guru" ]'></span> -->
+                    </h1>
+                    <h1 class="display-5 fw-600 text-primary tw mb-4"></h1>
+                    <p class="mt-3">Can’t wait to get this started?</p>
+                    <div class="d-flex justify-content-center justify-content-md-start">
+                        <button type="button" class="btn btn-primary btn-shadow btn-lg mt-3 btn-animate"
+                            (click)="openLetTalksComponent()">LET'S TALK
+                            <span class="pulse-animation"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container d-none d-md-block">
+            <div class="row align-items-center">
+                <div class="col-lg-12 col-md-12 ">
+                    <h5 class="fw-600 text-dark mb-2 d-block">Top Brands</h5>
+                    <div class="row align-items-center">
+                        <div class="col-md-3 col-lg-2 mt-2">
+                            <a href="https://thetraxi.com/" target="blank"><img class="img-logo"
+                                    src="../../../assets/home/top-brands/the_traxi.webp" height="30px"></a>
+                        </div>
+                        <div class="col-md-3  col-lg-2 mt-2">
+                            <a href="https://play.google.com/store/apps/details?id=com.streamwise" target="blank"><img
+                                    class="img-logo" src="../../../assets/home/top-brands/streamwise-brand.webp" height="30px"></a>
+                        </div>
+                        <div class="col-md-3 col-lg-2 mt-2">
+                            <a href="https://stockware.com.au/app/home" target="blank"><img class="img-logo"
+                                    src="../../../assets/home/top-brands/stockware-brand.webp" height="30px"></a>
+                        </div>
+                        <div class="col-md-3 col-lg-2 mt-2">
+                            <a href="https://play.google.com/store/apps/details?id=com.au.gonanny" target="blank"><img
+                                    class="img-logo" src="../../../assets/home/top-brands/go_nanny.webp" height="30px"></a>
+                        </div>
+                        <div class="col-md-3 col-lg-2 mt-2">
+                            <a href="https://play.google.com/store/apps/details?id=com.pocket_studio"
+                                target="blank"><img class="img-logo" src="../../../assets/home/top-brands/pocket_studio.webp"
+                                    height="30px"></a>
+                        </div>
+                        <div class="col-md-3 col-lg-2 mt-2">
+                            <a href="https://everlens.io/" target="blank"><img class="img-logo"
+                                    src="../../../assets/home/top-brands/logo.webp" height="30px"></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="text-center pointer d-none d-md-block mt-5">
+            <!-- <a (click)="scrollTo(home)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="48" viewBox="0 0 30 48">
+                    <g id="toggle" transform="translate(-944 -969)">
+                        <g id="Rectangle_3" data-name="Rectangle 3" transform="translate(944 969)" fill="none"
+                            stroke="#DED4B7" stroke-width="3">
+                            <rect width="30" height="48" rx="15" stroke="none" />
+                            <rect x="1.5" y="1.5" width="27" height="45" rx="13.5" fill="none" />
+                        </g>
+                        <circle id="Ellipse_7" class="circle" data-name="Ellipse 7" cx="3" cy="3" r="3"
+                            transform="translate(956 999)" />
+                    </g>
+                </svg>
+            </a> -->
+            <div class="scroller" (click)="scrollTo(home)"></div>
+        </div>
+    </div>
+</section>
+
+<!-- what we do section starts -->
+<section #home>
+    <div class="serviceCol sectionSpace">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="sub-text">Our Specialization</span>
+                <h2 class="section-heading after-border text-black">Mobile App and website development Services</h2>
+                <p class="col-md-9 px-0 mx-auto">
+                    Our highly trained software engineers will help you transform the most complex ideas into a
+                    comprehensive solution that will facilitate you to build customer-focused, user-friendly,
+                    feature-rich, low-maintenance, and future-ready digital products for your business needs. We are a
+                    trusted digital partner of major brands, our clients vouch for our transparency in furnishing
+                    deadlines, deliverables, and prices.
+                </p>
+            </div>
+            <div class="row row-cols-1 row-cols-md-12 row-cols-lg-12 animatedParent" data-sequence='500'>
+                <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="testConfig">
+                    <div class="px-3 animated fadeInLeft" ngxSlickItem *ngFor="let slider of serviceDetails">
+                        <div class="service-box">
+                            <img src="../../../assets/images/slider/{{slider.photo}}"
+                                class="mb-3 service-icons d-inline-block">
+                            <h4 class="service_title">{{slider.title}}</h4>
+                            <p class="service_paragraph">{{slider.details}}</p>
+                        </div>
+                    </div>
+                </ngx-slick-carousel>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- verticals sections starts -->
+<section>
+    <div class="verticalCol bg-lite innerSpace" id="verticals">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="sub-text">YOU'LL LOVE IT</span>
+                <h2 class="section-heading after-border text-black">Verticals</h2>
+            </div>
+            <div class="row animatedParent animateOnce" data-sequence='500'>
+                <div class="col-lg-6 animated fadeInLeft" data-id='1'>
+                    <a [routerLink]="['./../app-development']" class="text-white">
+                        <div class="grad-box d-flex box1 boxA">
+                            <div class="align-self-end">
+                                <h5 class="text-black">Mobile Apps Development</h5>
+                                <p class="mb-0 font-small text-black">We build high-quality and well-engineered, mobile
+                                    apps
+                                    for our clients with beautiful designs, the best user experience, highly Flexible,
+                                    and
+                                    Future Ready. Our Team comprises the best mobile app developers creating Android and
+                                    iOS
+                                    Apps using Native and Cross-platform technologies.</p>
+                            </div>
+                            <div class="ms-auto">
+                                <img src="../../../assets/home/mobile_apps.webp" height="180px">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 animated fadeInLeft" data-id='2'>
+                    <div class="grad-box box2 boxB">
+                        <div class="text-end">
+                            <img src="../../../assets/home/e_commerce.webp" height="180px">
+                        </div>
+                        <div class="three-line-ellipsis mt-auto">
+                            <h5 class="text-black">E-commerce Website</h5>
+                            <p class="mb-0 font-small text-black">
+                                We are experts at building e-commerce websites that guarantee increased user engagement,
+                                a fulfilling experience, the best conversion rate, highly secure payments with one-click
+                                checkouts, and the fastest turnaround.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 animated fadeInLeft" data-id='3'>
+                    <a (click)="iotPage()" class="text-white">
+                        <div class="grad-box box3 boxC">
+                            <div class="text-end">
+                                <img src="../../../assets/home/iot.webp" height="180px">
+                            </div>
+                            <div class="three-line-ellipsis mt-auto">
+                                <h5 class="text-black">IOT</h5>
+                                <p class="mb-0 font-small text-black"
+                                    title="We have got expertise at delivering IoT dashboards that enables automation, data tracking, data collection and various other monitoring purposes.">
+                                    We have Best-in-class IoT engineers who will build the most advanced dashboard that
+                                    enables you to interact with the IoT devices in real-time through interactive
+                                    charts, graphs, UI elements, and reporting.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-6 col-md-6 animated fadeInRight" data-id='4'>
+                    <div class="grad-box box2 boxD">
+                        <div class="text-end">
+                            <img src="../../../assets/home/qa.webp" height="130px">
+                        </div>
+                        <div class="mt-auto">
+                            <h5 class="text-black">QA</h5>
+                            <p class="mb-0 font-small text-black">We have an exhaustive go-live strategy involving lots
+                                of quality analysis tools and testing methodologies that include unit testing,
+                                integration testing, performance testing, backup testing, dependencies check, code
+                                obfuscation, data backups, etc.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6  animated fadeInRight" data-id='5'>
+                    <a (click)="marketplacePage()" class="text-white">
+                        <div class="grad-box d-flex box1 boxF">
+                            <div class="align-self-end mb-3">
+                                <h5 class="text-black">Marketplace</h5>
+                                <p class="mb-0 font-small text-black">We are market leaders in providing marketplace
+                                    platform development with high-performance matchmaking algorithms, connecting
+                                    prospective buyers with sellers.</p>
+                            </div>
+                            <div class="ms-auto">
+                                <img class="verticalsImage mb-3" src="../../../assets/home/marketplace.webp"
+                                    height="180px">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- process section starts -->
+<section>
+    <div class="processCol innerSpace" id="process">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="sub-text">HOW DO WE BUILD</span>
+                <h2 class="section-heading after-border text-black">The Process</h2>
+            </div>
+            <div class="processSteps d-none d-lg-block">
+                <div class="processRow">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-auto ">
+                            <div class="btmtxt stepCol">
+                                <span>STEP 2</span>
+                            </div>
+                            <div class="processCard cardBar">
+                                <div class="processImg">
+                                    <span class="b2c-img-pro me-2"></span>
+                                    <!-- <img src="../../../assets/img/development.svg"> -->
+                                </div>
+                                <div class="processTitle">
+                                    <h5>Development</h5>
+                                </div>
+                                <div class="processDesp">
+                                    <p>After designing, we use best technology that ensures years of progressive
+                                        development and offers security, stability and ease of use.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-auto ">
+                            <div class="btmtxt stepCol">
+                                <span>STEP 4</span>
+                            </div>
+                            <div class="processCard cardBar">
+                                <div class="processImg processImg2">
+                                    <span class="b2c-img-pro me-2"></span>
+                                    <!-- <img src="../../../assets/img/deployment.svg"> -->
+                                </div>
+                                <div class="processTitle">
+                                    <h5>Deployment</h5>
+                                </div>
+                                <div class="processDesp">
+                                    <p>After getting a green signal from the quality analysis team, the deployment team
+                                        quickly deploy the apps/website in the app stores & other marketplaces. And,
+                                        also make sure.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBorder"></div>
+                <div class="row  justify-content-between ">
+                    <div class="col-lg-auto ">
+                        <div class="stepCol">
+                            <span>STEP 1</span>
+                        </div>
+                        <div class="processCard topBar cardBar">
+                            <div class="processImg processImg3">
+                                <span class="b2c-img-pro me-2"></span>
+                                <!-- <img src="../../../assets/img/discover_design.svg"> -->
+                            </div>
+                            <div class="processTitle">
+                                <h5>Discover & Design</h5>
+                            </div>
+                            <div class="processDesp">
+                                <p>We start with the documentation of the website then gradually move to designing. We
+                                    build stunningly beautiful designs with creative colour scheme and aesthetic appeal.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-auto ">
+                        <div class="stepCol">
+                            <span>STEP 3</span>
+                        </div>
+                        <div class="processCard topBar cardBar">
+                            <div class="processImg  processImg4">
+                                <span class="b2c-img-pro me-2"></span>
+                                <!-- <img src="../../../assets/img/testing_qa.svg"> -->
+                            </div>
+                            <div class="processTitle">
+                                <h5>Testing & QA</h5>
+                            </div>
+                            <div class="processDesp">
+                                <p>After the development, the developed product goes through rigorous testing & quality
+                                    analysis process using various testing techniques that ensures that product run as
+                                    smooth as in the hands of developers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-auto ">
+                        <div class="stepCol">
+                            <span>STEP 5</span>
+                        </div>
+                        <div class="processCard topBar cardBar">
+                            <div class="processImg processImg5">
+                                <span class="b2c-img-pro me-2"></span>
+                                <!-- <img src="../../../assets/img/support.svg"> -->
+                            </div>
+                            <div class="processTitle">
+                                <h5>Support 24x7</h5>
+                            </div>
+                            <div class="processDesp">
+                                <p>As a service based company we know that there can be several post deployment issues
+                                    to look after so we engaged with teams to quickly resolve and assist with any
+                                    unforeseen circumstances 24x7.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="processSteps_sm d-block d-lg-none">
+                <div class="row row-cols-1 row-cols-sm-2">
+                    <div class="col">
+                        <div class="stepCol">
+                            <span>STEP 1</span>
+                        </div>
+                        <div class="processCard topBar cardBar">
+                            <div class="processImg">
+                                <img src="../../../assets/img/discover_design.svg">
+                            </div>
+                            <div class="processTitle">
+                                <h5>Discover & Design</h5>
+                            </div>
+                            <div class="processDesp">
+                                <p>We start with the documentation of the website then gradually move to designing. We
+                                    build stunningly beautiful designs with creative colour scheme and aesthetic appeal.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="stepCol">
+                            <span>STEP 2</span>
+                        </div>
+                        <div class="processCard cardBar">
+                            <div class="processImg">
+                                <img src="../../../assets/img/development.svg">
+                            </div>
+                            <div class="processTitle">
+                                <h5>Development</h5>
+                            </div>
+                            <div class="processDesp">
+                                <p>After designing, we use best technology that ensures years of progressive development
+                                    and offers security, stability and ease of use.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="stepCol">
+                            <span>STEP 3</span>
+                        </div>
+                        <div class="processCard  cardBar">
+                            <div class="processImg">
+                                <img src="../../../assets/img/testing_qa.svg">
+                            </div>
+                            <div class="processTitle">
+                                <h5>Testing & QA</h5>
+                            </div>
+                            <div class="processDesp">
+                                <p>After the development, the developed product goes through rigorous testing & quality
+                                    analysis process using various testing techniques that ensures that product run as
+                                    smooth as in the hands of developers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class=" stepCol">
+                            <span>STEP 4</span>
+                        </div>
+                        <div class="processCard cardBar">
+                            <div class="processImg">
+                                <img src="../../../assets/img/deployment.svg">
+                            </div>
+                            <div class="processTitle">
+                                <h5>Deployment</h5>
+                            </div>
+                            <div class="processDesp">
+                                <p>After getting a green signal from the quality analysis team, the deployment team
+                                    quickly deploy the apps/website in the app stores & other marketplaces. And, also
+                                    make sure.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="stepCol">
+                            <span>STEP 5</span>
+                        </div>
+                        <div class="processCard  cardBar">
+                            <div class="processImg">
+                                <img src="../../../assets/img/support.svg">
+                            </div>
+                            <div class="processTitle">
+                                <h5>Support 24x7</h5>
+                            </div>
+                            <div class="processDesp">
+                                <p>As a service based company we know that there can be several post deployment issues
+                                    to look after so we engaged with teams to quickly resolve and assist with any
+                                    unforeseen circumstances 24x7.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portpolio -->
+<div>
+    <div class="text-center">
+        <h6 class="secondary-heading">OUR WORK</h6>
+    </div>
+    <app-portfolio-all></app-portfolio-all>
+</div>
+
+<!-- <section>
+    <div class="portfolio sectionSpace">
+        <div class="portfolioInner">
+            <div class="text-center mb-5">
+                <span class="sub-text">OUR WORK</span>
+                <h2 class="section-heading after-border text-black">Portfolio</h2>
+                <p>How have we helped our partners in the past? (Projects with a bit of case study)</p>
+            </div>
+            <ul class="nav nav-pills mb-5 justify-content-center mob-nav-ul" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-category1" role="tab"
+                        aria-controls="pills-home" aria-selected="true">Web & Apps</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-website" data-toggle="pill" href="#pills-category2" role="tab"
+                        aria-controls="pills-profile" aria-selected="false">Website</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-mobile" data-toggle="pill" href="#pills-category3" role="tab"
+                        aria-controls="pills-contact" aria-selected="false">Mobile Apps</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-iot" data-toggle="pill" href="#pills-category4" role="tab"
+                        aria-controls="pills-contact" aria-selected="false">IoT</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-category1" role="tabpanel"
+                    aria-labelledby="pills-category1">
+                    <div class="your-class">
+                        <div>
+                            <div class="row flex-row-reverse bg-lite">
+                                <div class="col-lg-6 bg-kc text-white section py-4 py-sm-5">
+                                    <div class="col-md-9 px-4 px-md-0 mx-auto">
+                                        <div class="d-flex  align-items-center mb-4">
+                                            <img src="../../../assets/images/portfolio/kc_logo.png" height="60px">
+                                            <div class="ml-3">
+                                                <h5>Kctickets.online</h5>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-md-12">
+                                                <h6 class=" font-bold">Overview</h6>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <p class="font-small">It’s an amazon of events services & tickets
+                                                    booking.
+                                                    This platform enables you to find the varieties of events such as
+                                                    movies, shows, concerts, rallies, fundraiser, convention, classes,
+                                                    dance, festival, party, seminar, social gatherings, etc happening
+                                                    around
+                                                    your city or any city of your choice. At the same time, it enables
+                                                    the
+                                                    event organizers to list their events on the platform and increase
+                                                    their
+                                                    discoverability that eventually leads to more sales.</p>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-md-12">
+                                                <h6 class=" font-bold">Our Role</h6>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <p class="font-small">The client already had a successful website but he
+                                                    wanted to refurbish this with modern technology, beautiful looking
+                                                    UI,
+                                                    fast loading web pages, friendly user interface and a platform that
+                                                    can
+                                                    handle large traffics without much hassle. It’s always difficult to
+                                                    migrate a project from a legacy technology to modern but our team
+                                                    did a
+                                                    great job in turning this around. Within 6 weeks our team has built
+                                                    the
+                                                    entire website from scratch, migrated the user base and launched the
+                                                    website without any breakdowns.</p>
+                                            </div>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="col-md-6">
+                                                <h6 class=" font-bold">Tech Stack</h6>
+                                                <ul class="list-unstyled font-small">
+                                                    <li>Frontend: Angular 8, HTML, CSS</li>
+                                                    <li>Backend: Node JS</li>
+                                                    <li>Database: MySQL</li>
+                                                    <li>Cloud: AWS</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h6 class=" font-bold">Deliverables</h6>
+                                                <ul class="list-unstyled font-small">
+                                                    <li>A Website</li>
+                                                    <li>A Landing Page</li>
+                                                    <li>A Vendor Portal</li>
+                                                    <li>An Admin Panel</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6  align-self-center py-5">
+                                    <div class="tabImg">
+                                        <img src="../../../assets/images/portfolio/kctickets.png" data-color="#ff0000"
+                                            id="qwerty">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-category2" role="tabpanel" aria-labelledby="pills-category2">
+                    <div class="your-class">
+                        <div>
+                            <div class="row flex-row-reverse bg-light">
+                                <div class="col-lg-6 bg-pharma text-white section py-5 py-sm-5">
+                                    <div class="col-md-9 px-4 px-md-0 mx-auto">
+                                        <div class="d-flex align-items-center mb-4">
+                                            <img src="../../../assets/img/pharmasave.png" height="30px">
+
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-md-12">
+                                                <h6 class=" font-bold">Overview</h6>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <p class="font-small">It’s a one stop shop for all your travel needs. It
+                                                    provides full-cycle travel services from best trip recommendations
+                                                    to
+                                                    ticket booking, hotel bookings, travel bookings and trip guides.
+                                                    It’s a
+                                                    marketplace as well and enables trip guides, hotels, travel agencies
+                                                    to
+                                                    list their services on the platform and increase the reach of their
+                                                    services.</p>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-md-12">
+                                                <h6 class=" font-bold">Our Role</h6>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <p class="font-small">Mr Khor was veteran of the travel industry and he
+                                                    knows that industry has been plagued with lots of middlemen,
+                                                    inefficiencies and price disparities while looking at the
+                                                    millennials
+                                                    wander lust he sees an opportunity in all this chaos. He wanted to
+                                                    create a platform that will ease the life of a traveler, enables
+                                                    transparency, ensures safety and encourages people to travel more.
+                                                    At
+                                                    the same time he wanted the local people to also benefit by
+                                                    increasing
+                                                    the discoverability of their services and boost their incomes. Our
+                                                    brilliant tech architects helped him figure out a perfect solution
+                                                    that
+                                                    catered extremely well to his requirements and he was very elated
+                                                    looking at the final product.</p>
+                                            </div>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="col-md-6">
+                                                <h6 class=" font-bold">Tech Stack</h6>
+                                                <ul class="list-unstyled font-small">
+                                                    <li>Frontend: Angular 8, HTML, CSS</li>
+                                                    <li>Backend: Node JS</li>
+                                                    <li>Database: MySQL</li>
+                                                    <li>Cloud: AWS</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h6 class=" font-bold">Deliverables</h6>
+                                                <ul class="list-unstyled font-small">
+                                                    <li>A Website</li>
+                                                    <li>A Landing Page</li>
+                                                    <li>A Vendor Portal</li>
+                                                    <li>An Admin Panel</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6  bg-lite py-5 align-self-center">
+                                    <div class="tabImg">
+                                        <img src="../../../assets/img/pharmsave.png" data-color="#ff0000" id="qwerty">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="row bg-lite">
+                                <div class="col-lg-6 bg-way text-white section py-4 py-sm-5">
+                                    <div class="col-md-9 px-4 px-md-0 mx-auto">
+                                        <div class="d-flex align-items-center mb-4">
+                                            <img src="../../../assets/images/portfolio/way_logo.png" height="60px">
+                                            <div class="ml-3">
+                                                <h5>Way.com</h5>
+                                                <p class="font-small mb-0">Find The Right Local Pro For Everything You
+                                                    Need
+                                                    Done</p>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-md-12">
+                                                <h6 class=" font-bold">Overview</h6>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <p class="font-small">It’s an amazing one-in all service marketplace
+                                                    that
+                                                    enables you to explore the best services & deals in the city be it
+                                                    events, movie tickets, dining places, hassle-free parking spots,
+                                                    etc.
+                                                    Way.com provides an opportunity for homeowners, parking lots to list
+                                                    their services frictionless on the platform & enjoy the increased
+                                                    sales
+                                                    & traction.</p>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-md-12">
+                                                <h6 class=" font-bold">Our Role</h6>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <p class="font-small">When the client first came to us with this idea he
+                                                    was
+                                                    very excited about the idea but very confused as well as how this
+                                                    will
+                                                    be put into shape. Our talented team of consultants, architects
+                                                    analyzed
+                                                    this idea deeply and after due deliberation they have finally come
+                                                    up
+                                                    with this wonderful UI and a solid tech architecture that ensures
+                                                    the
+                                                    speed, smoothness and scalability of this website.</p>
+                                            </div>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="col-md-6">
+                                                <h6 class=" font-bold">Tech Stack</h6>
+                                                <ul class="list-unstyled font-small">
+                                                    <li>Frontend: Angular 8, HTML, CSS</li>
+                                                    <li>Backend: Node JS</li>
+                                                    <li>Database: MySQL</li>
+                                                    <li>Cloud: AWS</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h6 class=" font-bold">Deliverables</h6>
+                                                <ul class="list-unstyled font-small">
+                                                    <li>A Website</li>
+                                                    <li>A Landing Page</li>
+                                                    <li>An Admin Panel</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6  bg-lite py-5 align-self-center">
+                                    <div class=" tabImg">
+                                        <img src="../../../assets/images/portfolio/way.png" data-color="#ff0000"
+                                            id="qwerty">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-category3" role="tabpanel" aria-labelledby="pills-category3">
+                    <div class="your-class">
+                        <div>
+                            <div class="row bg-lite">
+                                <div class="col-lg-6 bg-eve text-white section py-4 py-sm-5">
+                                    <div class="col-md-9 px-4 px-md-0 mx-auto">
+                                        <div class="d-flex align-items-center mb-4">
+                                            <img src="../../../assets/images/portfolio/myeve_logo.png" height="60px">
+                                            <div class="ml-3">
+                                                <h5>Myeve.com</h5>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-md-12">
+                                                <h6 class=" font-bold">Overview</h6>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <p class="font-small">It’s an amazing one-in all service marketplace
+                                                    that
+                                                    enables you to explore the best services & deals in the city be it
+                                                    events, movie tickets, dining places, hassle-free parking spots,
+                                                    etc.
+                                                    Way.com provides an opportunity for homeowners, parking lots to list
+                                                    their services frictionless on the platform & enjoy the increased
+                                                    sales
+                                                    & traction.</p>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-md-12">
+                                                <h6 class=" font-bold">Our Role</h6>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <p class="font-small">When the client first came to us with this idea he
+                                                    was
+                                                    very excited about the idea but very confused as well as how this
+                                                    will
+                                                    be put into shape. Our talented team of consultants, architects
+                                                    analyzed
+                                                    this idea deeply and after due deliberation they have finally come
+                                                    up
+                                                    with this wonderful UI and a solid tech architecture that ensures
+                                                    the
+                                                    speed, smoothness and scalability of this website.</p>
+                                            </div>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="col-md-6">
+                                                <h6 class=" font-bold">Tech Stack</h6>
+                                                <ul class="list-unstyled font-small">
+                                                    <li>Frontend: Angular 8, HTML, CSS</li>
+                                                    <li>Backend: Node JS</li>
+                                                    <li>Database: MySQL</li>
+                                                    <li>Cloud: AWS</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h6 class=" font-bold">Deliverables</h6>
+                                                <ul class="list-unstyled font-small">
+                                                    <li>A Website</li>
+                                                    <li>A Landing Page</li>
+                                                    <li>An Admin Panel</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6  bg-lite py-5 align-self-center">
+                                    <div class="tabImg">
+                                        <img src="../../../assets/images/portfolio/myeve.png" data-color="#ff0000"
+                                            id="qwerty">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="your-class">
+
+                        <div>
+                            <div class="row flex-row-reverse bg-lite">
+                                <div class="col-lg-6 bg-stream text-white section py-5 py-sm-5">
+                                    <div class="col-md-9 px-4 px-md-0 mx-auto">
+                                        <div class="d-flex align-items-center mb-4">
+                                            <img src="../../../assets/img/streamwise_logo.png" height="60px">
+                                            <div class="ml-3">
+                                                <h5>Streamwise</h5>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-md-12">
+                                                <h6 class=" font-bold">Overview</h6>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <p class="font-small">It’s an amazing one-in all service marketplace
+                                                    that enables you to explore the best services & deals in the city be
+                                                    it events, movie tickets, dining places, hassle-free parking spots,
+                                                    etc. Way.com provides an opportunity for homeowners, parking lots to
+                                                    list their services frictionless on the platform & enjoy the
+                                                    increased sales & traction.</p>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-md-12">
+                                                <h6 class=" font-bold">Our Role</h6>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <p class="font-small">When the client first came to us with this idea he
+                                                    was very excited about the idea but very confused as well as how
+                                                    this will be put into shape. Our talented team of consultants,
+                                                    architects analyzed this idea deeply and after due deliberation they
+                                                    have finally come up with this wonderful UI and a solid tech
+                                                    architecture that ensures the speed, smoothness and scalability of
+                                                    this website.</p>
+                                            </div>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="col-md-6">
+                                                <h6 class=" font-bold">Tech Stack</h6>
+                                                <ul class="list-unstyled font-small">
+                                                    <li>Frontend: Angular 8, HTML, CSS</li>
+                                                    <li>Backend: Node JS</li>
+                                                    <li>Database: MySQL</li>
+                                                    <li>Cloud: AWS</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h6 class=" font-bold">Deliverables</h6>
+                                                <ul class="list-unstyled font-small">
+                                                    <li>A Website</li>
+                                                    <li>A Landing Page</li>
+                                                    <li>A Vendor Portal</li>
+                                                    <li>An Admin Panel</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6  bg-lite py-5 align-self-center">
+                                    <div class="tabImg">
+                                        <img src="../../../assets/img/streamwise.png" data-color="#ff0000" id="qwerty">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-category4" role="tabpanel" aria-labelledby="pills-category3">
+                    <div class="your-class">
+                        <div>
+                            <div class="row flex-row-reverse bg-lite">
+                                <div class="col-lg-6 bg-iotech text-white section py-4 py-sm-5">
+                                    <div class="col-md-9 px-4 px-md-0 mx-auto">
+                                        <div class="d-flex align-items-center mb-4">
+                                            <img src="../../../assets/images/portfolio/iotech_logo.png" height="60px">
+                                            <div class="ml-3">
+                                                <h5>IOTech</h5>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-md-12">
+                                                <h6 class=" font-bold">Overview</h6>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <p class="font-small">IoTech is the leading service & infra provider for
+                                                    automated monitoring solutions for the warehouses, farms,
+                                                    manufacturing
+                                                    plants, inventory and employees. The monitoring solutions are driven
+                                                    by
+                                                    embedded IoT devices at the location that continuously push data to
+                                                    the
+                                                    server and a solid infrastructure at the backend that store, process
+                                                    and
+                                                    analyze the data for the management. An interactive dashboard helps
+                                                    with
+                                                    KPIs, actionable insights & reporting and mobile apps for easy
+                                                    controls,
+                                                    alerts & notifications.</p>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-md-12">
+                                                <h6 class=" font-bold">Our Role</h6>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <p class="font-small">Our client has been a leading provider of
+                                                    monitoring
+                                                    solutions for farms in Nigeria and they wanted to expand their
+                                                    operations to other verticals. So, we built a robust technology
+                                                    enabled
+                                                    product with embedded IoT devices at the site and a data rich
+                                                    platform
+                                                    at the backend that ensures reliable data collection, interactive
+                                                    dashboard for KPIs and a SaaS architecture that enabled him to plug
+                                                    &
+                                                    play and distribute the solution to others as well.</p>
+                                            </div>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="col-md-6">
+                                                <h6 class=" font-bold">Tech Stack</h6>
+                                                <ul class="list-unstyled font-small">
+                                                    <li>Frontend: Angular 8, HTML, CSS</li>
+                                                    <li>Backend: Node JS</li>
+                                                    <li>Database: MySQL</li>
+                                                    <li>Frontend: Protocol: MQTT</li>
+                                                    <li>Cloud: AWS</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h6 class=" font-bold">Deliverables</h6>
+                                                <ul class="list-unstyled font-small">
+                                                    <li>A Website</li>
+                                                    <li>A Landing Page</li>
+                                                    <li>A Dashboard</li>
+                                                    <li>A Master Admin Panel</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6  align-self-center py-5">
+                                    <div class="tabImg">
+                                        <img src="../../../assets/images/portfolio/iotech.png" data-color="#ff0000"
+                                            id="qwerty">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- info sections starts -->
+<section>
+    <div class="infoCol mt-5">
+        <div class="info-section">
+            <div class="d-flex align-items-center justify-content-around">
+                <div class="d-flex flex-column text-center">
+                    <h3 class='numscroller d-inline-block' data-min='1' data-max='120' data-delay='5'
+                        data-increment='1'>120
+                    </h3>
+                    <span class="d-block">Completed Projects</span>
+                </div>
+                <div class="d-flex flex-column text-center">
+                    <h3 class='numscroller d-inline-block' data-min='1' data-max='10' data-delay='5' data-increment='1'>
+                        10</h3>
+                    <span class="d-block">Partnerships Worldwide</span>
+                </div>
+                <div class="d-flex flex-column text-center">
+                    <h3 class='numscroller d-inline-block' data-min='1' data-max='50' data-delay='5' data-increment='1'>
+                        50</h3>
+                    <span class="d-block">Clients Worldwide</span>
+                </div>
+                <div class="d-flex flex-column text-center">
+                    <h3 class='numscroller d-inline-block' data-min='1' data-max='60' data-delay='5' data-increment='1'>
+                        60</h3>
+                    <span class="d-block">Apps Live</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container padd-y innerSpace">
+    <div class="brands">
+        <h2 class=" rounded-0 fw-600 text-center pb-3 text-uppercase">Our Top Partner Brands!</h2>
+        <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+            <div ngxSlickItem *ngFor="let img of imagesLogo" class="slide">
+                <div class="w-100 d-flex justify-content-center">
+                    <img src="../../../assets/home/{{img.photo}}" class="">
+                </div>
+            </div>
+        </ngx-slick-carousel>
+    </div>
+</div>
+
+
+<!-- contact section starts -->
+<section>
+    <div class="contact btmSpace" id="contact">
+        <div class="container">
+            <div class="row contact-row justify-content-between">
+                <div class="col-md-12 col-lg-6">
+                    <div>
+                        <h2 class="contact-heading ">CONTACT US</h2>
+                        <img src="../../../assets/img/logo.svg">
+                        <div class="d-flex my-4">
+                            <a target="_blank" href="mailto:Rimon.attalla@outlook.com" class="text-default me-3">
+                                <img src="../../../assets/images/skype.svg" class="pe-2">
+                                Skype
+                            </a>
+                            <a target="_blank" class="text-default"
+                                href="https://api.whatsapp.com/send?phone=+61430 742 202">
+                                <img src="../../../assets/images/whatsapp.svg" class="pe-2">
+                                +61 430 742 202
+                            </a>
+                        </div>
+                        <div class="d-flex my-4 contactInner">
+                            <div class="inquiryCol">
+                                <img src="../../../assets/images/call.svg" class="pe-2 social-icon">
+                                <a href="tel:+611300709345" class="contactDiv text-default">+61-1300 709 345</a>
+                                <!-- <a href="tel:+918054377604" class=" contactDiv text-default pl-lg-1">+91 8054377604</a> -->
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <span class="d-flex">
+                                <img src="../../../assets/images/location.svg" class="pe-2">
+                                Melbourne VIC 3000, Australia
+                            </span>
+                        </div>
+                    </div>
+                    <div class="mapCol">
+                        <div class="mt-5">
+                            <agm-map [latitude]="selectedLat" [longitude]="selectedLng" [zoom]="zoom" class="map-size">
+                                <agm-marker [latitude]="selectedLat" [longitude]="selectedLng"
+                                    [markerDraggable]="false">
+                                </agm-marker>
+                                <agm-map-type-control>
+                                    <button>Satellite</button>
+                                    <button>RoadMap</button>
+                                </agm-map-type-control>
+                            </agm-map>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 animatedParent animateOnce">
+                    <!-- <div class="contact-form animated fadeInRight">
+                        <h4 class="text-center mb-5 let-after  font-bold">Let's Get in Touch</h4>
+                        <input type="hidden" name="type" value="get-in-touch">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="font-small">Name</label>
+                            <input type="text" class="form-control alpha" placeholder="Enter your name...."
+                                minlength="5" maxlength="30" [(ngModel)]="name" #userName="ngModel"
+                                pattern="^[A-Za-z ]+$" required>
+                            <span *ngIf="userName?.invalid && userName?.errors?.pattern"
+                                class="d-block text-danger erroe">Please enter
+                                your name</span>
+                            <span *ngIf="!name">
+                                <small class="text-danger erroe">
+                                    {{errorName}}
+                                </small>
+                            </span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="font-small">Email Address</label>
+                            <input type="email" class="form-control" placeholder="Enter your email address"
+                                [(ngModel)]="email" #userEmail="ngModel" maxlength="70" required
+                                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$">
+                            <span *ngIf="userEmail?.invalid && userEmail?.errors?.pattern"
+                                class="w-100 text-danger erroe">Please enter
+                                valid email</span>
+                            <span *ngIf="!email">
+                                <small class="text-danger erroe">
+                                    {{errorEmail}}
+                                </small>
+                            </span>
+                        </div>
+                        <div class="mb-3 d-flex flex-column">
+                            <label for="phone" class="font-small">Phone Number</label>
+                            <input type="text" class="form-control phone w-100" ng2TelInput
+                                placeholder="Enter your phone number" [ng2TelInputOptions]="{initialCountry: 'au'}"
+                                (hasError)="hasError($event)" (ng2TelOutput)="getNumber($event)"
+                                (intlTelInputObject)="telInputObject($event)" (countryChange)="onCountryChange($event)"
+                                name="phoneNumber" [(ngModel)]="phoneNumber" maxlength="10" minlength="10"
+                                #userPhone="ngModel" pattern='^[0-9]{10}$' required />
+
+                            <span *ngIf="userPhone?.invalid && userPhone?.errors?.pattern"
+                                class="w-100 text-danger erroe">Please enter your phone number</span>
+                            <span *ngIf="!phoneNumber">
+                                <small class="text-danger erroe">
+                                    {{errorPhone}}
+                                </small>
+                            </span>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" placeholder="Tell us about your project in brief…" rows="5"
+                                [(ngModel)]="message" #userMessage="ngModel" maxlength="200"></textarea>
+                        </div>
+                        <form [formGroup]="aFormGroup" class="g-recaptcha-contact d-flex justify-content-center">
+                            <ngx-recaptcha2 #captchaElem [siteKey]="siteKey" formControlName="recaptcha">
+                            </ngx-recaptcha2>
+                        </form>
+                        <p class="text-center text-danger erroe" *ngIf="!aFormGroup.value.recaptcha">{{erroeCapcha}}</p>
+                        <div class="text-center">
+                            <button type="submit"
+                                class="btn btn-primary contact_form_btn fw-600 sub btn-block py-2 mt-4"
+                                (click)="subjectDetails(template)">SEND
+                                MESSAGE</button>
+                        </div>
+                    </div> -->
+                    <contact-all></contact-all>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="other-data btmSpace mb-0">
+    <div class="container">
+        <div class="d-flex flex-column flex-md-row justify-content-between">
+            <div class="d-flex mb-4 mb-lg-0">
+                <img src="../../../assets/home/team_member.webp" class="pe-2 other-img">
+                <div>
+                    <h4 class='numscroller d-inline-block text-white' data-min='1' data-max='50' data-delay='5'
+                        data-increment='10'>40</h4>
+                    <span class="font-inherit">+</span>
+                    <span class="d-block">TEAM MEMBERS</span>
+                </div>
+            </div>
+            <div class="d-flex mb-4 mb-lg-0">
+                <img src="../../../assets/home/positive_feedback.webp" class="pe-2 other-img">
+                <div>
+                    <h4 class='numscroller d-inline-block text-white' data-min='1' data-max='99' data-delay='5'
+                        data-increment='10'>99</h4>
+                    <span class="font-inherit">%</span>
+                    <span class="d-block">POSITIVE FEEDBACK</span>
+                </div>
+            </div>
+            <div class="d-flex mb-4 mb-lg-0">
+                <img src="../../../assets/home/sleepless_hour.webp" class="pe-2 other-img">
+                <div>
+                    <h4 class='numscroller d-inline-block text-white' data-min='1' data-max='3024' data-delay='5'
+                        data-increment='10'>3024</h4>
+                    <span class="d-block">SLEEPLESS HOURS</span>
+                </div>
+            </div>
+            <div class="d-flex mb-lg-0">
+                <img src="../../../assets/home/cups_of_coffee.webp" class="pe-2 other-img">
+                <div>
+                    <h4 class='numscroller d-inline-block text-white' data-min='1' data-max='1000' data-delay='5'
+                        data-increment='10'>1000</h4>
+                    <span class="font-inherit">+</span>
+                    <span class="d-block">CUPS OF COFFEE</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ng-template #template>
+    <div class="mt-4 modal-body text-center">
+        <div class="spinner-border text-primary"></div>
+        <h5>Plase wait...</h5>
+    </div>
+</ng-template>

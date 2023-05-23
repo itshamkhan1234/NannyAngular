@@ -1,0 +1,157 @@
+<!-- contact_banner starts -->
+<section class="bannerShape">
+    <div class="banner contact-banner d-flex align-items-center topSpace">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1 class="primary-heading  font-bold text-center text-md-left">
+                        <span class="d-block">CONTACT US</span>
+                    </h1>
+                </div>
+                <div class="col-md-6">
+                    <div class="bannerImg">
+                        <img src="../../../assets/img/banner-contact.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="../../../assets/img/polygon_three.svg" class="pol3 polygon">
+        <img src="../../../assets/img/polygon_two.svg" class="pol1 polygon">
+        <img src="../../../assets/img/polygon_one.svg" class="pol2 polygon">
+    </div>
+</section>
+<div class="row justify-content-center mb-5 g-0 px-3">
+    <div class="col-lg-8">
+        <div class="director-section">
+            <b class="fw-600">See Director Page</b>
+            <button type="button" class="btn btn-primary" [routerLink]="['./../director-info']">CLICK HERE</button>
+        </div>
+    </div>
+</div>
+<!-- contactCol starts -->
+<section>
+    <div class="contact btmSpace" id="contact">
+        <div class="container">
+            <div class="row contact-row justify-content-between">
+                <div class="col-md-12 col-lg-6">
+                    <div>
+                        <h2 class="contact-heading">CONTACT US</h2>
+                        <img src="../../../assets/img/logo.svg">
+                        <div class="d-flex my-4">
+                            <a target="_blank" href="mailto:Rimon.attalla@outlook.com" class="text-default me-3">
+                                <img src="../../../assets/images/skype.svg" class="pe-2">
+                                Skype
+                            </a>
+                            <a target="_blank" class="text-default"
+                                href="https://api.whatsapp.com/send?phone=+61 430 742 202">
+                                <img src="../../../assets/images/whatsapp.svg" class="pe-2">
+                                +61 430 742 202
+                            </a>
+                        </div>
+                        <div class="d-flex my-4 contactInner">
+                            <div class="inquiryCol">
+                                <img src="../../../assets/images/call.svg" class="pe-2 social-icon">
+                                <a href="tel:+611300709345" class="contactDiv text-default">+61-1300 709 345</a>
+                                <!-- <a href="tel:+918054377604" class=" contactDiv text-default pl-lg-1">+91 8054377604</a> -->
+                            </div>
+
+                        </div>
+                        <div class="d-flex">
+                            <span class="d-flex">
+                                <img src="../../../assets/images/location.svg" class="pe-2">
+                                Melbourne VIC 3000, Australia
+                            </span>
+                        </div>
+                    </div>
+                    <div class="mapCol">
+                        <div class="mt-5">
+                            <agm-map [latitude]="selectedLat" [longitude]="selectedLng" [zoom]="zoom" class="map-size">
+                                <agm-marker [latitude]="selectedLat" [longitude]="selectedLng"
+                                    [markerDraggable]="false">
+                                </agm-marker>
+                                <agm-map-type-control>
+                                    <button>Satellite</button>
+                                    <button>RoadMap</button>
+                                </agm-map-type-control>
+                            </agm-map>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 animatedParent animateOnce">
+                    <!-- <div class="contact-form animated fadeInRight">
+                        <h4 class="text-center mb-5 let-after  font-bold">Let's Get in Touch</h4>
+                        <input type="hidden" name="type" value="get-in-touch">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Name</label>
+                            <input type="text" class="form-control alpha" placeholder="Enter your name...."
+                                minlength="5" maxlength="30" [(ngModel)]="name" #userName="ngModel"
+                                pattern="^[A-Za-z ]+$" required>
+                            <span *ngIf="userName?.invalid && userName?.errors?.pattern"
+                                class="d-block text-danger erroe">Please enter
+                                your name</span>
+                            <span *ngIf="!name">
+                                <small class="text-danger erroe">
+                                    {{errorName}}
+                                </small>
+                            </span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" placeholder="Enter your email address"
+                                [(ngModel)]="email" #userEmail="ngModel" maxlength="70" required
+                                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$">
+                            <span *ngIf="userEmail?.invalid && userEmail?.errors?.pattern"
+                                class="w-100 text-danger erroe">Please enter
+                                valid email</span>
+                            <span *ngIf="!email">
+                                <small class="text-danger erroe">
+                                    {{errorEmail}}
+                                </small>
+                            </span>
+                        </div>
+                        <div class="mb-3 d-flex flex-column">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="text" class="form-control phone w-100" ng2TelInput
+                                placeholder="Enter your phone number" [ng2TelInputOptions]="{initialCountry: 'au'}"
+                                (hasError)="hasError($event)" (ng2TelOutput)="getNumber($event)"
+                                (intlTelInputObject)="telInputObject($event)" (countryChange)="onCountryChange($event)"
+                                name="phoneNumber" [(ngModel)]="phoneNumber" maxlength="10" minlength="10"
+                                #userPhone="ngModel" pattern='^[0-9]{10}$' required />
+
+                            <span *ngIf="userPhone?.invalid && userPhone?.errors?.pattern"
+                                class="w-100 text-danger erroe">Please enter your phone number</span>
+                            <span *ngIf="!phoneNumber">
+                                <small class="text-danger erroe">
+                                    {{errorPhone}}
+                                </small>
+                            </span>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" placeholder="Tell us about your project in brief…" rows="5"
+                                [(ngModel)]="message" #userMessage="ngModel" maxlength="200"></textarea>
+                        </div>
+                        <form [formGroup]="aFormGroup" class="g-recaptcha-contact d-flex justify-content-center">
+                            <ngx-recaptcha2 #captchaElem [siteKey]="siteKey" formControlName="recaptcha">
+                            </ngx-recaptcha2>
+                        </form>
+                        <p class="text-center text-danger erroe" *ngIf="!aFormGroup.value.recaptcha">{{erroeCapcha}}</p>
+                        <div class="text-center">
+                            <button type="submit"
+                                class="btn btn-primary contact_form_btn fw-600 sub btn-block py-2 mt-4"
+                                (click)="subjectDetails(template)">SEND
+                                MESSAGE</button>
+                        </div>
+                    </div> -->
+                    <contact-all></contact-all>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <ng-template #template>
+    <div class="mt-4 modal-body text-center">
+        <div class="spinner-border text-primary"></div>
+        <h5>Plase wait...</h5>
+    </div>
+</ng-template> -->

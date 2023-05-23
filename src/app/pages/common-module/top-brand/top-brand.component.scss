@@ -1,0 +1,44 @@
+.brand-img {
+    width: 100%;
+    height: 44px;
+    object-fit: contain;
+}
+.logo-brands {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.shadow-box-2 {
+    width: 100%;
+    border-radius: 6px;
+}
+// .top-brands{
+//     background: url("./../../../../assets/top_brands/brands_logo.png") no-repeat;
+//     // background-size: 1616px 902px;
+//     width: 100%;
+//     height: 724px;
+//     background-size: contain;
+//     flex-shrink: 0;
+//     .b2c-img {
+//         background-position: 0 -3744px;
+//     }
+//     @media (max-width: 1399px) {
+//         height: 623px;
+//     }
+//     @media (max-width:1199px) {
+//         height: 523px;
+//     }
+//     @media (max-width:991px) {
+//         height: 388px;
+//     }
+//     @media (max-width:767px) {
+//         height: 288px;
+//     }
+// }
+@media screen and (max-width: 767px) {
+    .brand-img {
+        width: 120px;
+        height: 30px;
+        object-fit: contain;
+    }
+}

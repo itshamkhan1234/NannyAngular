@@ -1,0 +1,29 @@
+.nav-item{
+    margin-top: 16px;
+}
+.nav-link {
+    color: #000000;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2b2b2b;
+    border-right: none;
+    padding: 14px 50px;
+    &:nth-last-child(1) {
+        border-right: 1px solid #e5e5e5;
+    }
+}
+.nav-link.active {
+    background-color: #ffffff !important;
+    color: #DED4B7;
+}
+@media screen and (max-width: 575px) {
+    .nav-link{
+        font-size: 12px;
+        padding: 10px 8px;
+        width: 140px;
+    }
+}

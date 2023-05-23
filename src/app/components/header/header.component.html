@@ -1,0 +1,51 @@
+<header>
+    <nav class="navbar navbar-expand-xl navbar-light shadow-sm bg-white py-3">
+        <div class="container">
+            <a class="navbar-brand cursor-pointer" (click)="homePage();">
+                <img class="brand-logo" src="../../../assets/home/logo.webp">
+            </a>
+            <i class="fas fa-bars navbar-toggler ms-auto" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                aria-label="Toggle navigation"></i>
+            <!-- <div class="col-lg-auto col-xl-auto"> -->
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-auto my-3 my-xl-0 align-items-xl-center">
+                    <!-- <li class="nav-item">
+                        <a class="nav-link cursor-pointer" [ngClass]="router.url == '/services' ? 'active' : ''"
+                            (click)="servicePage();">Services</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link cursor-pointer" [ngClass]="router.url == '/marketplace' ? 'active' : ''"
+                            (click)="marketplacePage();">Marketplace</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link cursor-pointer" [ngClass]="router.url == '/app-development' ? 'active' : ''"
+                            (click)="openAppDevelopment()">App Development</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link cursor-pointer" [ngClass]="router.url == '/nft-marketplace-development' ? 'active' : ''"
+                            (click)="nftPage()">Nft Marketplace</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link cursor-pointer" [ngClass]="router.url == '/portfolio' ? 'active' : ''"
+                            (click)="porfolio();">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link cursor-pointer" [ngClass]="router.url == '/contact-us' ? 'active' : ''"
+                            (click)="contactUsPage();">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pe-0">
+                            <button class="btn btn-primary btn-shadow btn-lg btn-animate"
+                                (click)="openLetTalksComponent()">LET'S TALK
+                                <span class="pulse-animation"></span>
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- </div> -->
+
+        </div>
+    </nav>
+</header>
